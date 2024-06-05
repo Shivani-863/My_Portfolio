@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="Style.css">
+     <script src="https://kit.fontawesome.com/65a0b7524d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                     <li><a href="#About">About</a></li>
+                      <li><a href="#services">Services</a></li>
+                       <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><span>S</span>oftware <span>E</span>ngineer</p>
+                <h1>Hi I'm <span>Shivani Kamble</span><br> From Maharashtra</h1>
+            </div>
+        </div>
+</div>
+<!-- ----------------------About-------------------------- -->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="text">
+                    Hello Folks !!!<br> I'm Shivani Ramshankar Kamble currently pursuing my B.Tech in Information Technology from Government College of Engineering, Karad.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links " onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                </div>
+                <div class="tab-content active-tab" id="skills">
+                <ul>
+                    <li><span>Languages</span><br>C, C++, Java (Basics)</li>
+                     <li><span>Web Technologies</span><br>HTML, CSS, Javascript, Bootstrap</li>
+                      <li><span>Core Subjects</span><br>Object Oriented Programming, SQL, Data Structures</li>
+                </ul>
+                </div>
+                 <div class="tab-content" id="education">
+                <ul>
+                    <li><span>B.Tech in Information Technology</span><br>Government College of Engineering, Karad.</li>
+                    <li><span>HSC (Maharashtra Board)</span><br>Lord's Public Jr. College, Bhandara.</li>
+                    <li><span>SSC (Maharashtra Board)</span><br>Mahila Samaj High School, Bhandara.</li>
+                </ul>
+                </div>
+                <div class="tab-content" id="achievements">
+                <ul>
+                    <li><span>Siemens Scholar</span><br>Among Top 200 Students from Govt. Engg. Colleges in India.</li>
+                    <li><span>GATE 2024 Qualifier</span><br>Qualified GATE Examination 2024/</li>
+                    <li><span>200+ Problems Solved</span><br>Solved 200+ problems on coding platforms like Leetcode,Codechef</li>
+                </ul>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------------Services-------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Front-end Developer</h2>
+            <p class="text2">
+                Developing visual solutions to business problem statements using front-end technologies like HTML, CSS, JS, etc.
+            </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-palette"></i>
+            <h2>Graphics Designer</h2>
+         <p class="text2"> Creating Graphics images, videos on demand for social media and printing purposes.</p>
+        </div>
+        <div>        
+            <i class="fa-solid fa-circle-check"></i>
+            <h2>Problem Solver</h2>
+         <p class="text2"> Solving coding problem statements on various platforms like Leetcode, Codechef</p>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------------------Portfolio----------------------- -->
+<div id="portfolio">
+    <div class="container">
+         <h1 class="sub-title">My Work</h1>
+         <div class="work-list">
+            <div class="work">
+                <img src="Images/images/work-1.png">
+                <div class="layer">
+                    <h3>Blog Website</h3>
+                    <p>A blog website where one can perform CRUD operations on blogs.</p>
+                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/images/work-2.png">
+                <div class="layer">
+                    <h3>My Portfolio</h3>
+                    <p>A website where you can find Shivani Kamble</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/images/work-3.png">
+                <div class="layer">
+                    <h3>Travel Website</h3>
+                    <p>A website where you can find my travel wishlist.</p>
+                     <a href="https://shivani-863.github.io/MyTravelList/Index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+         </div>
+    </div>
+</div>
+
+<!-- ---------------------contact----------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>shivanikamble083@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9284679410</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="Images/images/Shivani_Kamble_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Shivani. Made with by <i class="fa-solid fa-heart"></i> Shivani Kamble</p>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-content");
+    function opentab(tabname){
+         for(tablink of tablinks)
+         {
+            tablink.classList.remove("active-link");
+         }
+          for(tabcontent of tabcontents)
+         {
+            tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemen=document.getElementById("sidemenu");
+    function openmenu()
+    {
+        sidemen.style.right="0";
+    }
+    function closemenu()
+    {
+        sidemen.style.right="-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyCtKpca6gOQ0Etp0nFJ3Q9ANKvOWCazj2cRW0obW7cS2pd5Mce4pJZTFVe9nEvevLn/exec'
+  const form = document.forms['submit-to-google-sheet']
+ const msg=document.getElementById("msg");
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML= "Message sent Successfully!!"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
