@@ -106,7 +106,7 @@
             <div class="work">
                 <img src="Images/images/work-1.png">
                 <div class="layer">
-                    <h3>College Club Website Frontend</h3>
+                    <h3>College Club Website</h3>
                     <p>A responsive college club frontend website which provides users with college clubs information and joining club page.</p>
                      <a href="https://shivani-863.github.io/College-Club-Frontend/Index" target='blank'><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
@@ -148,10 +148,10 @@
                 <p><i class="fa-solid fa-envelope"></i>shivanikamble083@gmail.com</p>
                 <p><i class="fa-solid fa-square-phone"></i>9284679410</p>
                 <div class="social-icons">
-                    <a href="https://github.com/Shivani-863" target='blank'><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/shivani-kamble-bbab11229/" target='blank'><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.facebook.com/shivani.kamble.08/" target='blank'><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/shivanikamble8603/" target='blank'><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Shivani-863" target="blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shivani-kamble-bbab11229/" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/shivani.kamble.08/" target="blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/shivanikamble8603/" target="blank"><i class="fa-brands fa-instagram"></i></a>
                 </div>
                 <a href="Images/images/Shivani_Kamble_Resume.pdf" download class="btn btn2">Download Resume</a>
             </div>
@@ -204,12 +204,12 @@
     }
 </script>
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyCtKpca6gOQ0Etp0nFJ3Q9ANKvOWCazj2cRW0obW7cS2pd5Mce4pJZTFVe9nEvevLn/exec'
-  const form = document.forms['submit-to-google-sheet']
+  const scriptURL = "https://script.google.com/macros/s/AKfycbyCtKpca6gOQ0Etp0nFJ3Q9ANKvOWCazj2cRW0obW7cS2pd5Mce4pJZTFVe9nEvevLn/exec"
+  const form = document.forms["submit-to-google-sheet"]
  const msg=document.getElementById("msg");
-  form.addEventListener('submit', e => {
+  form.addEventListener("submit", e => {
     e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    fetch(scriptURL, { method: "POST", body: new FormData(form)})
       .then(response => {
         msg.innerHTML= "Message sent Successfully!!"
         setTimeout(function(){
@@ -217,7 +217,7 @@
         },5000)
         form.reset()
       })
-      .catch(error => console.error('Error!', error.message))
+      .catch(error => console.error("Error", error.message))
   })
 </script>
 </body>
